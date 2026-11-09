@@ -2,13 +2,13 @@
 
 | | |
 | --- | --- |
-| **Student name** | _________________________ |
-| **Roll / Register no.** | _________________________ |
-| **Course / Lab** | Full Stack Development Lab |
-| **Experiment no.** | ____ |
-| **Date** | ____ / ____ / ________ |
+| **Student name** | 1.Ashish Chidi <br> 2. Nirmal Chhetri <br> 3. Himal Chidi|
+| **Register no.** |1. 24221A4558 <br> 2. 24221A4561 <br> 3. 24221A4560|
+| **Lab** | Full Stack Development Lab |
+| **Lab In-Charge.** | Mrs .K. Varalakshmi|
+| **Date** | 10/09/2026|
 | **Live URL** | https://full-stack-lab-project.netlify.app |
-| **Source code** | _________________________ |
+| **Source code** |https://github.com/Ashishx10/full-stack-lab-project|
 
 ---
 

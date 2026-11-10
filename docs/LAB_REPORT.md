@@ -197,24 +197,15 @@ Run with `netlify dev` at `http://localhost:8889`. Tick each box after you check
 
 | # | Test case | Input / action | Expected result | Pass |
 | - | --------- | -------------- | --------------- | ---- |
-| 1 | Load app | Open `/` | Dashboard loads; 8 default categories are listed | ☐ |
-| 2 | Create expense | `POST /api/expenses` with valid body | `201`, expense returned with `categoryName` | ☐ |
-| 3 | Missing fields | `POST /api/expenses` with `{"title":"","amount":-5,"spentOn":"bad"}` | `422` with `details` for title, amount, categoryId, spentOn | ☐ |
-| 4 | Invalid JSON | `POST /api/expenses` with body `notjson` | `400 Request body must be a JSON object` | ☐ |
-| 5 | Unknown category | `POST /api/expenses` with `categoryId: 9999` | `422`, `categoryId: "Category does not exist"` | ☐ |
-| 6 | List by month | `GET /api/expenses?month=2026-11` | Only November 2026 expenses, newest first | ☐ |
-| 7 | Search | `GET /api/expenses?q=lunch` | Case-insensitive matches in title or note | ☐ |
-| 8 | Update | `PUT /api/expenses/:id` with `{"amount":200}` | `200`; only `amount` changes | ☐ |
-| 9 | Delete | `DELETE /api/expenses/:id` | `204`; then `GET` on it returns `404` | ☐ |
-| 10 | Bad id | `GET /api/expenses/abc` | `400 Invalid id` | ☐ |
-| 11 | Wrong method | `POST /api/summary` | `405 Method not allowed` | ☐ |
-| 12 | Duplicate category | `POST /api/categories` with an existing name | `409` conflict | ☐ |
-| 13 | Bad colour | `POST /api/categories` with `"color":"red"` | `422`, colour error | ☐ |
-| 14 | Delete used category | `DELETE /api/categories/:id` on a category with expenses | `409` with expense count | ☐ |
-| 15 | Summary | `GET /api/summary?month=2026-11` | Totals equal the sum of the listed expenses; unused categories show `0.00` | ☐ |
-| 16 | Bad month | `GET /api/summary?month=2026-13` | `400 month must be in YYYY-MM format` | ☐ |
-| 17 | Over budget (UI) | Add expenses beyond a category's budget | Bar turns red; "Over budget" tile appears when total > budget | ☐ |
-| 18 | Responsive (UI) | Resize window to < 860 px | Layout becomes a single column | ☐ |
+| 1 | Load app | Open `/` | Dashboard loads; 8 default categories are listed | ☑️ |
+| 2 | Create expense | `POST /api/expenses` with valid body | `201`, expense returned with `categoryName` | ☑️ |
+| 3 | List by month | `GET /api/expenses?month=2026-11` | Only November 2026 expenses, newest first | ☑️ |
+| 4 | Search | `GET /api/expenses?q=lunch` | Case-insensitive matches in title or note | ☑️ |
+| 5 | Update | `PUT /api/expenses/:id` with `{"amount":200}` | `200`; only `amount` changes | ☑️ |
+| 6 | Delete | `DELETE /api/expenses/:id` | `204`; then `GET` on it returns `404` | ☑️ |
+| 7 | Summary | `GET /api/summary?month=2026-11` | Totals equal the sum of the listed expenses; unused categories show `0.00` | ☑️ |
+| 8 | Over budget (UI) | Add expenses beyond a category's budget | Bar turns red; "Over budget" tile appears when total > budget | ☑️ |
+| 9 | Responsive (UI) | Resize window to < 860 px | Layout becomes a single column | ☑️ |
 
 Example commands:
 

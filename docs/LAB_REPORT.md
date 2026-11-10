@@ -226,14 +226,29 @@ curl -i "localhost:8889/api/summary?month=2026-11"
 
 ## 11. Output / screenshots
 
-_Paste your screenshots here._
+## Screenshots
+## 10. Application Screenshots
 
-1. Dashboard with monthly totals and the daily chart: `[screenshot]`
-2. Adding an expense, showing a validation error: `[screenshot]`
-3. Transaction list with search/filter applied: `[screenshot]`
-4. Categories & budgets panel showing an over-budget category: `[screenshot]`
-5. `curl` / Postman output for the API: `[screenshot]`
-6. Netlify deploy log showing migrations applied: `[screenshot]`
+### Dashboard
+![Dashboard](screenshots/ss1-dashboard.jpg)
+
+### Categories and Budgets
+![Categories and Budgets](screenshots/ss2-categories.jpg)
+
+### Adding a Category
+![Adding a Category](screenshots/ss3-add-category.jpg)
+
+### Transactions
+![Transactions](screenshots/ss4-transactions.jpg)
+
+### Delete Confirmation
+![Delete Confirmation](screenshots/ss5-delete-confirmation.jpg)
+
+### Updated Transactions
+![Updated Transactions](screenshots/ss6-updated-transactions.jpg)
+
+### Budget Status
+![Budget Status](screenshots/ss7-overbudget.jpg)
 
 ## 12. Result
 
